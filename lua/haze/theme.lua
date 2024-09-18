@@ -131,24 +131,37 @@ theme.loadTreesitter = function()
 		["@variable.builtin"] = { fg = p.periwinkle },
 		["@variable.parameter"] = { fg = p.frosted },
 		["@variable.member"] = { fg = p.tidepool },
+
 		["@constant"] = { link = "Constant" },
 		["@constant.builtin"] = { fg = p.frosted },
 		["@constant.macro"] = { link = "Macro" },
+
 		["@module"] = { fg = p.tidepool, style = "italic" },
 		["@label"] = { link = "Label" },
+
 		["@string"] = { link = "String" },
 		["@string.regexp"] = { fg = p.coral },
 		["@string.escape"] = { fg = p.amber },
 		["@string.special"] = { link = "Special" },
+		["@string.documentation"] = { fg = p.glacial },
+		["@string.special.path"] = { link = "Special" },
+		["@string.special.symbol"] = { fg = p.mossy },
+
 		["@character"] = { link = "Character" },
 		["@character.special"] = { link = "SpecialChar" },
+
 		["@boolean"] = { link = "Boolean" },
 		["@number"] = { link = "Number" },
 		["@float"] = { link = "Float" },
+
 		["@function"] = { link = "Function" },
 		["@function.builtin"] = { fg = p.coral },
 		["@function.call"] = { link = "Function" },
 		["@function.macro"] = { fg = p.glacial },
+
+		["@function.method"] = { link = "Function" },
+		["@function.method.call"] = { link = "Function" },
+
 		["@method"] = { link = "Function" },
 		["@constructor"] = { fg = p.violet },
 		["@parameter"] = { fg = p.frosted },
@@ -158,10 +171,26 @@ theme.loadTreesitter = function()
 		["@keyword.operator"] = { link = "Operator" },
 		["@keyword.return"] = { fg = p.periwinkle },
 
+		["@keyword.modifier"] = { link = "Keyword" },
+		["@keyword.type"] = { link = "Keyword" },
+		["@keyword.coroutine"] = { link = "Keyword" },
+
+		["@keyword.import"] = { link = "Include" },
+		["@keyword.repeat"] = { link = "Repeat" },
+		["@keyword.debug"] = { link = "Exception" },
+		["@keyword.exception"] = { link = "Exception" },
+
+		["@keyword.conditional"] = { link = "Conditional" },
+		["@keyword.conditional.ternary"] = { link = "Operator" },
+
+		["@keyword.directive"] = { link = "PreProc" },
+		["@keyword.directive.define"] = { link = "Define" },
+
+		["@keyword.export"] = { fg = p.tidepool },
+
 		["@conditional"] = { link = "Conditional" },
 		["@repeat"] = { link = "Repeat" },
 		["@debug"] = { link = "Debug" },
-		["@label"] = { link = "Label" },
 		["@include"] = { link = "Include" },
 		["@exception"] = { link = "Exception" },
 
@@ -180,6 +209,37 @@ theme.loadTreesitter = function()
 		["@punctuation.special"] = { fg = p.periwinkle },
 
 		["@comment"] = { link = "Comment" },
+		["@comment.documentation"] = { link = "Comment" },
+
+		["@comment.error"] = { fg = p.frost, bg = p.coral },
+		["@comment.warning"] = { fg = p.frost, bg = p.golden },
+		["@comment.hint"] = { fg = p.frost, bg = p.tidepool },
+		["@comment.todo"] = { fg = p.frost, bg = p.frosted },
+		["@comment.note"] = { fg = p.frost, bg = p.mossy },
+
+		["@markup"] = { fg = p.frost },
+		["@markup.strong"] = { fg = p.coral, style = "bold" },
+		["@markup.italic"] = { fg = p.violet, style = "italic" },
+		["@markup.strikethrough"] = { fg = p.twilight, style = "strikethrough" },
+		["@markup.underline"] = { link = "Underlined" },
+
+		["@markup.heading"] = { fg = p.periwinkle, style = "bold" },
+
+		["@markup.math"] = { fg = p.violet },
+		["@markup.quote"] = { fg = p.violet, style = "bold" },
+		["@markup.environment"] = { fg = p.glacial },
+		["@markup.environment.name"] = { fg = p.glacial },
+
+		["@markup.link"] = { link = "Tag" },
+		["@markup.link.label"] = { link = "Label" },
+		["@markup.link.url"] = { fg = p.amber, style = "italic", "underline" },
+
+		["@markup.raw"] = { fg = p.glacial },
+
+		["@markup.list"] = { link = "Special" },
+		["@markup.list.checked"] = { fg = p.mossy },
+		["@markup.list.unchecked"] = { fg = p.golden },
+
 		["@tag"] = { fg = p.periwinkle },
 		["@tag.attribute"] = { fg = p.glacial, style = "italic" },
 		["@tag.delimiter"] = { fg = p.twilight },
